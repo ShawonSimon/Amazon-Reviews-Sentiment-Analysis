@@ -35,6 +35,7 @@ This project processes [Amazon Reviews](https://amazon-reviews-2023.github.io/) 
    - Identifies top products in different categories based on positive sentiment.
    - Creates bar charts to display the results.
 11. Saving and Deploying Models:
+   
    - Saves the best-performing model to S3 for future predictions.
 
 ## Results
