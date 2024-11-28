@@ -15,26 +15,26 @@ This project processes [Amazon Reviews](https://amazon-reviews-2023.github.io/) 
 
    - A JSON file containing Amazon reviews is uploaded to an S3 bucket.
    - The data is converted to Parquet format for efficient processing.
-3. Data Preprocessing:
+2. Data Preprocessing:
 
    - Removes duplicates and unnecessary columns.
    - Cleans review text by removing special characters and converting to lowercase.
    - Adds a sentiment column: reviews with ratings ≥ 4 are labeled as positive (1), others as negative (0)
-5. Feature Engineering:
+3. Feature Engineering:
 
    - Tokenizes review text into words.
    - Removes stop words.
    - Converts text to numerical features using TF-IDF.
-7. Model Training and Evaluation:
+4. Model Training and Evaluation:
 
    - Splits the data into training and test sets.
    - Trains Naive Bayes, Random Forest, and Decision Tree models using Spark ML pipelines.
    - Evaluates models based on accuracy and generates a classification report.
-9. Visualization:
+5. Visualization:
 
    - Identifies top products in different categories based on positive sentiment.
    - Creates bar charts to display the results.
-11. Saving and Deploying Models:
+6. Saving and Deploying Models:
    
    - Saves the best-performing model to S3 for future predictions.
 
