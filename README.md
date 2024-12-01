@@ -3,6 +3,9 @@
 ## Overview
 This project processes [Amazon Reviews](https://amazon-reviews-2023.github.io/) from a JSON file, stores the data in Amazon S3, and performs sentiment analysis using Databricks. The pipeline includes data cleaning, preprocessing, model training, and visualization of the results, highlighting products with the most positive reviews in different categories
 
+## Project Architecture
+![](https://github.com/ShawonSimon/Amazon-Reviews-Sentiment-Analysis/blob/main/screenshots/sentimentA.jpg?raw=true)
+
 ## Technologies Used
 
 - Apache Spark (PySpark): For data processing and machine learning.
